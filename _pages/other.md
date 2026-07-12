@@ -9,7 +9,7 @@ nav_order: 2
 
 A few other things I'm into. More to come.
 
-- [Books I've read](#)
+- [Books I've read](/books/)
 - [My Scratch projects](#)
 - [Something else](#)
 
