@@ -3,15 +3,15 @@
 # -----------------------------------------------------------------------------
 
 title: Lucas M # the website title (if blank, full name will be used instead)
+# The footer copyright is built from these three names — keep the surname short so
+# the full last name isn't published.
 first_name: Lucas
 middle_name:
-last_name: Martinez
+last_name: M
 contact_note: # shown under the social icons; only renders when `social: true` in _pages/about.md
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Lucas Martinez's portfolio — projects and other things I'm working on.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Lucas M's portfolio — projects and other things I'm working on.
+footer_text: # appended after the copyright line in the footer; left empty on purpose
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -330,7 +330,7 @@ display_categories: [] # these categories will be displayed on the front page of
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Martinez]
+  last_name: [M]
   first_name: [Lucas, L.]
 
   style: apa
