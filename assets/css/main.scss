@@ -1,0 +1,99 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* -----------------------------------------------------------------------------
+   LOCAL OVERRIDE — single fixed theme (not part of stock al-folio)
+   -----------------------------------------------------------------------------
+   Everything above this line is a copy of al_folio_core's assets/css/main.scss.
+   Everything below is ours.
+
+   `enable_darkmode: false` in _config.yml removes the light/dark toggle, but it
+   also means <html> never gets data-theme="dark" — so the theme's dark rules
+   never match and the site falls back to the light :root palette. This re-declares
+   the dark palette directly on :root so the site is locked to dark with no toggle.
+
+   Colors are the theme's own dark values. The page background is read from
+   `site_colors.background` in _config.yml — change it there, not here.
+   ----------------------------------------------------------------------------- */
+:root {
+  color-scheme: dark;
+
+  --global-bg-color: {{ site.site_colors.background | default: "#1c1c1d" }};
+
+  --global-code-bg-color: #2c3237;
+  --global-text-color: #e8e8e8;
+  --global-text-color-light: #828282;
+  --global-theme-color: #2698ba;
+  --global-hover-color: #2698ba;
+  --global-hover-text-color: #ffffff;
+  --global-footer-bg-color: #e8e8e8;
+  --global-footer-text-color: #1c1c1d;
+  --global-footer-link-color: #000000;
+  --global-distill-app-color: #e8e8e8;
+  --global-divider-color: #424246;
+  --global-card-bg-color: #212529;
+  --global-back-to-top-bg-color: rgba(255, 255, 255, 0.5);
+  --global-back-to-top-text-color: #000000;
+  --global-newsletter-bg-color: #e8e8e8;
+  --global-newsletter-text-color: #1c1c1d;
+
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #215d42;
+  --global-tip-block-text: #beffe2;
+  --global-tip-block-title: #e2f5ec;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #6b5900;
+  --global-warning-block-text: #fff2af;
+  --global-warning-block-title: #fff8d8;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #600;
+  --global-danger-block-text: #ffb9b9;
+  --global-danger-block-title: #ffe0e0;
+}
+
+/* The theme shows/hides these per mode; we're always dark. */
+:root .only-light {
+  display: none;
+}
+
+:root .only-dark {
+  display: block;
+}
+
+/* The theme hardcodes `.table { color: #212529 }` instead of using the palette
+   variable, so table text (the news list) renders near-black on a dark page and
+   is unreadable. Make it follow the theme like everything else. */
+.table {
+  color: var(--global-text-color);
+}
