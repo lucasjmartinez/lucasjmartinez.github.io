@@ -3,14 +3,12 @@
 # -----------------------------------------------------------------------------
 
 title: Lucas M # the website title (if blank, full name will be used instead)
-# The footer copyright is built from these three names — keep the surname short so
-# the full last name isn't published.
 first_name: Lucas
 middle_name:
-last_name: M
+last_name: Martinez # the footer copyright is built from these three names
 contact_note: # shown under the social icons; only renders when `social: true` in _pages/about.md
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Lucas M's portfolio — projects and other things I'm working on.
+  Lucas Martinez's portfolio — projects and other things I'm working on.
 footer_text: # appended after the copyright line in the footer; left empty on purpose
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -330,7 +328,7 @@ display_categories: [] # these categories will be displayed on the front page of
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [M]
+  last_name: [Martinez]
   first_name: [Lucas, L.]
 
   style: apa
