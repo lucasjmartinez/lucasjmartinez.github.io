@@ -2,8 +2,11 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: true
-nav_order: 1
+# Hidden for now — no posts yet. To bring the tab back: delete `published: false`,
+# uncomment the two lines below, and set `latest_posts.enabled: true` in _pages/about.md.
+# nav: true
+# nav_order: 1
+published: false
 pagination:
   enabled: true
   collection: posts

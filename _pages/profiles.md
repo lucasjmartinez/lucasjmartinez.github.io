@@ -3,8 +3,11 @@ layout: profiles
 permalink: /people/
 title: people
 description: members of the lab or group
-nav: true
-nav_order: 7
+# Hidden for now. To bring the tab back: delete `published: false`, uncomment the two
+# lines below, and replace the Einstein sample profile below.
+# nav: true
+# nav_order: 7
+published: false
 
 profiles:
   # if you want to include more than one profile, just replicate the following block

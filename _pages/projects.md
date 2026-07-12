@@ -2,10 +2,12 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Things Lucas has made.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 1
+# Uncomment once there are enough projects to group them. Each project's front matter
+# needs a matching `category:`. Left off for now so the page doesn't show empty headings.
+# display_categories: [work, fun]
 horizontal: false
 ---
 
