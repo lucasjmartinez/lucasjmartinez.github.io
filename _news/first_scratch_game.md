@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-This website is live! :tada: More coming soon.
+[Check out my first Scratch game!](https://scratch.mit.edu/projects/1352253331)

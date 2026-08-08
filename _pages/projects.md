@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Things Lucas has made.
+description: Things I have made!
 nav: true
 nav_order: 1
 # Uncomment once there are enough projects to group them. Each project's front matter

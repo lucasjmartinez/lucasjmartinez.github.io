@@ -26,4 +26,4 @@ latest_posts:
 
 Hi, I'm Lucas.
 
-This is where I'll be putting the things I make — projects, and whatever else I'm into. Check back soon.
+This is where I’ll be putting the things I make — projects, and whatever else I’m into. Check back soon.
